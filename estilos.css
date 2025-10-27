@@ -1,0 +1,133 @@
+
+/* por: Ramos Briones Keila Abisag y Rivera García Pedro Miguel */
+:root {
+    --beige-claro: #f5f1e9;
+    --beige-medio: #d6c7b8;
+    --beige-oscuro: #a6917a;
+    --marron-suave: #7a5c40;
+    --acento: #c8a165;
+    --texto-principal: #4b3a2f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--beige-claro);
+    color: var(--texto-principal);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--beige-medio);
+    box-shadow: 0 2px 5px rgba(122, 92, 64, 0.2);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.8rem;
+    color: var(--marron-suave);
+    text-transform: lowercase;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -40px; /* por: Ramos Briones Keila Abisag y Rivera García Pedro Miguel */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--marron-suave);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+    background-color: var(--acento);
+    color: var(--beige-claro);
+}
+
+.main-content {
+    margin-top: 40px;
+}
+
+.intro {
+    background-color: var(--beige-medio);
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(166, 145, 122, 0.2);
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--marron-suave);
+}
+
+.intro p {
+    font-size: 1.15rem;
+    max-width: 700px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: var(--marron-suave);
+}
+
+.section p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    color: var(--beige-oscuro);
+} /*por: Ramos Briones Keila Abisag y Rivera García Pedro Miguel*/
+
+.footer {
+    background-color: var(--beige-medio);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    color: var(--marron-suave);
+    border-top: 1px solid var(--beige-oscuro);
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .header {
+        padding-bottom: 25px;
+    }
+}
