@@ -1,5 +1,4 @@
-
-/* por: Ramos Briones Keila Abisag y Rivera García Pedro Miguel */
+/* 🎨 PALETA Y VARIABLES BASE */
 :root {
     --beige-claro: #f5f1e9;
     --beige-medio: #d6c7b8;
@@ -9,6 +8,7 @@
     --texto-principal: #4b3a2f;
 }
 
+/* 🧱 RESETEO Y BASE */
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +29,7 @@ body {
     margin: 0 auto;
 }
 
+/* 🐾 ENCABEZADO */
 .header {
     background-color: var(--beige-medio);
     box-shadow: 0 2px 5px rgba(122, 92, 64, 0.2);
@@ -70,16 +71,18 @@ body {
     color: var(--beige-claro);
 }
 
+/* 🌿 CONTENIDO PRINCIPAL */
 .main-content {
     margin-top: 40px;
 }
 
+/* Bloque de introducción */
 .intro {
     background-color: var(--beige-medio);
     padding: 30px 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(166, 145, 122, 0.2);
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .intro h2 {
@@ -93,8 +96,14 @@ body {
     max-width: 700px;
 }
 
+/* Secciones generales */
 .section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: var(--beige-claro);
+    border-left: 5px solid var(--acento);
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(166, 145, 122, 0.1);
 }
 
 .section h3 {
@@ -107,8 +116,212 @@ body {
     font-size: 1.1rem;
     max-width: 700px;
     color: var(--beige-oscuro);
-} /*por: Ramos Briones Keila Abisag y Rivera García Pedro Miguel*/
+}
 
+/* 📦 SECCIÓN DE PRODUCTOS */
+.productos {
+    padding: 60px 0;
+    background-color: var(--beige-claro);
+}
+
+.productos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--marron-suave);
+    margin-bottom: 40px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.producto {
+    background-color: var(--beige-medio);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 1.5rem;
+    color: var(--marron-suave);
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--beige-oscuro);
+}
+
+.producto .precio {
+    font-weight: bold;
+    color: var(--acento);
+    font-size: 1.2rem;
+}
+
+/* 🛍️ SECCIÓN DE PEDIDOS */
+.pedidos {
+    padding: 60px 0;
+    background-color: var(--beige-medio);
+}
+
+.pedidos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--marron-suave);
+    margin-bottom: 30px;
+}
+
+.grid-pedidos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.pedido-item {
+    background-color: var(--beige-claro);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.pedido-item:hover {
+    transform: translateY(-5px);
+}
+
+.pedido-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.pedido-item h3 {
+    font-size: 1.4rem;
+    color: var(--marron-suave);
+    margin-bottom: 10px;
+}
+
+.pedido-item .precio {
+    font-weight: bold;
+    color: var(--acento);
+    font-size: 1.2rem;
+}
+
+.pedido-item button {
+    background-color: var(--acento);
+    color: var(--beige-claro);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.pedido-item button:hover {
+    background-color: var(--marron-suave);
+}
+
+/* 📋 FORMULARIO DE PEDIDOS */
+.formulario-pedido {
+    background-color: var(--beige-claro);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.formulario-pedido h3 {
+    text-align: center;
+    color: var(--marron-suave);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.formulario-pedido p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario label {
+    font-weight: bold;
+    color: var(--marron-suave);
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 10px;
+    border: 2px solid var(--beige-oscuro);
+    border-radius: 6px;
+    background-color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    border-color: var(--acento);
+    outline: none;
+}
+
+.formulario button {
+    background-color: var(--acento);
+    color: var(--beige-claro);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.formulario button:hover {
+    background-color: var(--marron-suave);
+    transform: translateY(-3px);
+}
+
+/* 🐕 NOTA FINAL */
+.nota-pedidos {
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+    color: var(--marron-suave);
+}
+
+/* 👣 PIE DE PÁGINA */
 .footer {
     background-color: var(--beige-medio);
     text-align: center;
@@ -119,7 +332,7 @@ body {
     margin-top: 40px;
 }
 
-/* Responsive */
+/* 📱 RESPONSIVE */
 @media (max-width: 768px) {
     .nav-menu ul {
         flex-direction: column;
@@ -129,5 +342,17 @@ body {
 
     .header {
         padding-bottom: 25px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    .intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .section h3 {
+        font-size: 1.5rem;
     }
 }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Paws - Pedidos</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">happy paws</h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos">Productos</a></li>
+                    <li><a href="adopta.html">¡Adopta un amiguito!</a></li>
+                    <li><a href="sucursales">Sucursales</a></li>
+                    <li><a href="contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="pedidos" class="pedidos">
+            <div class="container">
+                <h2>¡Haz tu pedido con estilo (y sin drama)!</h2>
+                <p>
+                    ¿Tu peludo te mira como si te reclamara por no tener snacks? 😩  
+                    ¡Tranquilo! Aquí puedes pedirle todo lo que necesita sin despeinarte (ni mover una patita).
+                </p>
+
+                <div class="grid-pedidos">
+                    <div class="pedido-item">
+                        <img src="Imagenes/Croquetas.png" alt="Croquetas premium">
+                        <h3>Combo Croquetil Deluxe 🦴</h3>
+                        <p>5 kg de croquetas con aroma irresistible (según nuestros 7 perritos y un gato entrometido).</p>
+                        <p class="precio">$350 MXN</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+
+                    <div class="pedido-item">
+                        <img src="Imagenes/Juguete.png" alt="Juguete para perro">
+                        <h3>Juguete anti-aburrimiento 🐶</h3>
+                        <p>Ideal para lomitos hiperactivos. Dura más que tus ganas de ir al gimnasio.</p>
+                        <p class="precio">$120 MXN</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+
+                    <div class="pedido-item">
+                        <img src="Imagenes/Camita.png" alt="Camita para mascota">
+                        <h3>Camita de sueños profundos 💤</h3>
+                        <p>Tan cómoda que vas a envidiar a tu mascota. 100% aprobada por ronquidos felices.</p>
+                        <p class="precio">$480 MXN</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="formulario-pedido">
+                    <h3>Formulario de Pedido</h3>
+                    <p>Rellena este formulario para hacer feliz a tu peludo (y ganarte sus lamidas de agradecimiento):</p>
+
+                    <form action="#" method="post" class="formulario">
+                        <label for="nombre">Tu nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Ramoncio Juanevio" required>
+
+                        <label for="direccion">Dirección de entrega:</label>
+                        <input type="text" id="direccion" name="direccion" placeholder="Ej: Calle Perruna #24" required>
+
+                        <label for="mascota">Tipo de mascota:</label>
+                        <select id="mascota" name="mascota" required>
+                            <option value="">Selecciona uno...</option>
+                            <option value="perro">Perro (el más consentido 🐶)</option>
+                            <option value="gato">Gato (el verdadero jefe 🐱)</option>
+                            <option value="otro">Otro (hámster ninja, loro chismoso, pez filósofo...)</option>
+                        </select>
+
+                        <label for="producto">Producto que deseas:</label>
+                        <input type="text" id="producto" name="producto" placeholder="Ej: Camita Deluxe o Croquetas Premium" required>
+
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1">
+
+                        <label for="mensaje">Mensaje adicional (opcional):</label>
+                        <textarea id="mensaje" name="mensaje" rows="3" placeholder="Ej: Entregar rápido, mi gato me observa con odio."></textarea>
+
+                        <button type="submit">Enviar pedido 🐾</button>
+                    </form>
+                </div>
+
+                <div class="nota-pedidos">
+                    <p>💬 Nota: también aceptamos pagos en croquetas (solo si eres gato o perro certificado).</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
